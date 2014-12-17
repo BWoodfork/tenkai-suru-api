@@ -10,6 +10,7 @@
   (reset! -env environment)
   (info (str "Starting " task-name " in " environment))
   ; find and run the task
+
   (info (str "Finished " task-name " in " environment)))
 
 (defn -main [& args]

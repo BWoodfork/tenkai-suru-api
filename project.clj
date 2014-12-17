@@ -9,6 +9,7 @@
                  [environ "1.0.0"]
                  [markdown-clj "0.9.47"]
                  [org.clojure/java.jdbc "0.3.6"]
+                 [org.clojure/tools.namespace "0.2.7"]
                  [postgresql "9.1-901.jdbc4"]
                  [ragtime/ragtime.core "0.3.7"]
                  [ragtime/ragtime.sql.files "0.3.7"]
