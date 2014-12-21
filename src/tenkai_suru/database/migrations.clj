@@ -1,4 +1,4 @@
-(ns tenkai-suru.database.migrate
+(ns tenkai-suru.database.migrations
   (:require
     [ragtime.core :as rag]
     [ragtime.sql.files :as sql]))
@@ -11,3 +11,7 @@
 
 (defn migrations [migrations-dir]
   (sql/migrations migrations-dir))
+
+(defn rollback-last [connection-uri]
+  (rag/rollback-last
+    (rag/connection connection-uri)))
